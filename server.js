@@ -1,7 +1,7 @@
 const express = require('express');
 const mongodb = require('mongodb');
 let db;
-const string = 'mongodb+srv://todoAppUser:test@123@cluster0-p7bni.mongodb.net/items?retryWrites=true&w=majority'
+const string = 'mongodb+srv://engcluster0-p7bni.mongodb.net/items?retryWrites=true&w=majority'
 mongodb.connect(string, {useNewUrlParser: true, useUnifiedTopology: true}, function(err, client){
   db = client.db();
 })
